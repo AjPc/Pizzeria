@@ -74,6 +74,7 @@ function prosciSelected() {
     ocultarIngredientes();
     precioTotal.innerHTML = `Precio Total: ${total = (parseFloat(total) + parseFloat(precio2))} €`;
 }
+
 function capriSelected() {
     document.getElementById("tomate").checked = true;
     document.getElementById("queso").checked = true;
@@ -149,9 +150,6 @@ jamon.addEventListener("change", function () {
         document.getElementById("jamonImg").style.display = "none";
         precioExtra.innerHTML = `Precio Extra: ${precio0 = (parseFloat(precio0) - parseFloat(extra))} €`;
         precioTotal.innerHTML = `Precio Total: ${total = (parseFloat(total) - parseFloat(extra))} €`;
-        if ((jamon.checked == false) && (pinia.checked == false) && (champi.checked == false) && (bbq.checked == false) && (bacon.checked == false) && (carne.checked == false)) {
-            document.getElementById("cajaOculta").style.display = "none";
-        }
     }
 });
 
@@ -166,9 +164,6 @@ pinia.addEventListener("change", function () {
         document.getElementById("piniaImg").style.display = "none";
         precioExtra.innerHTML = `Precio Extra: ${precio0 = (parseFloat(precio0) - parseFloat(extra))} €`;
         precioTotal.innerHTML = `Precio Total: ${total = (parseFloat(total) - parseFloat(extra))} €`;
-        if ((jamon.checked == false) && (pinia.checked == false) && (champi.checked == false) && (bbq.checked == false) && (bacon.checked == false) && (carne.checked == false)) {
-            document.getElementById("cajaOculta").style.display = "none";
-        }
     }
 });
 
@@ -183,9 +178,6 @@ champi.addEventListener("change", function () {
         document.getElementById("champiImg").style.display = "none";
         precioExtra.innerHTML = `Precio Extra: ${precio0 = (parseFloat(precio0) - parseFloat(extra))} €`;
         precioTotal.innerHTML = `Precio Total: ${total = (parseFloat(total) - parseFloat(extra))} €`;
-        if ((jamon.checked == false) && (pinia.checked == false) && (champi.checked == false) && (bbq.checked == false) && (bacon.checked == false) && (carne.checked == false)) {
-            document.getElementById("cajaOculta").style.display = "none";
-        }
     }
 });
 
@@ -201,9 +193,6 @@ bbq.addEventListener("change", function () {
         document.getElementById("bbqImg").style.display = "none";
         precioExtra.innerHTML = `Precio Extra: ${precio0 = (parseFloat(precio0) - parseFloat(extra))} €`;
         precioTotal.innerHTML = `Precio Total: ${total = (parseFloat(total) - parseFloat(extra))} €`;
-        if ((jamon.checked == false) && (pinia.checked == false) && (champi.checked == false) && (bbq.checked == false) && (bacon.checked == false) && (carne.checked == false)) {
-            document.getElementById("cajaOculta").style.display = "none";
-        }
     }
 });
 
@@ -218,9 +207,6 @@ bacon.addEventListener("change", function () {
         document.getElementById("baconImg").style.display = "none";
         precioExtra.innerHTML = `Precio Extra: ${precio0 = (parseFloat(precio0) - parseFloat(extra))} €`;
         precioTotal.innerHTML = `Precio Total: ${total = (parseFloat(total) - parseFloat(extra))} €`;
-        if ((jamon.checked == false) && (pinia.checked == false) && (champi.checked == false) && (bbq.checked == false) && (bacon.checked == false) && (carne.checked == false)) {
-            document.getElementById("cajaOculta").style.display = "none";
-        }
     }
 });
 
@@ -234,9 +220,6 @@ carne.addEventListener("change", function () {
         document.getElementById("carpiImg").style.display = "none";
         precioExtra.innerHTML = `Precio Extra: ${precio0 = (parseFloat(precio0) - parseFloat(extra))} €`;
         precioTotal.innerHTML = `Precio Total: ${total = (parseFloat(total) - parseFloat(extra))} €`;
-        if ((jamon.checked == false) && (pinia.checked == false) && (champi.checked == false) && (bbq.checked == false) && (bacon.checked == false) && (carne.checked == false)) {
-            document.getElementById("cajaOculta").style.display = "none";
-        }
     }
 });
 
